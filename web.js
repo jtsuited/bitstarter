@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
     response.send(fs.readFileSync(htmlfile).toString());
 });
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8080;  //port 8080 allows web serving
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
